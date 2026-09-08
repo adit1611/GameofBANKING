@@ -20,7 +20,7 @@ const BankCard = ({
     <div className="flex flex-col">
       <Link
         href={`/transcation-history/?id=${account.appwriteItemId || account.id}`}
-        className=" relative flex h-80  max-w-110 justify-between rounded-[20px] border border-slate-400 shadow-2xs shadow-teal-300 bg-bank-gradient shadow-creditCard backdrop-blur-[6px] "
+       className="relative flex h-72 w-full max-w-110 justify-between rounded-[20px] border border-white/20 bg-bank-gradient shadow-creditCard backdrop-blur-[6px] overflow-hidden"
       >
        <div className="relative flex  w-5/7 flex-col justify-between rounded-l-xl border border-white/20 shadow-creditCard transition-all duration-300  bg-pink-600 p-6">
           <div className="">
@@ -59,7 +59,7 @@ const BankCard = ({
           />
         </div>
 
-        <Image
+         <Image 
           src="/icons/lines.png"
           width={316}
           height={190}
@@ -68,7 +68,7 @@ const BankCard = ({
         />
       </Link>
 
-      {showBalance && <Copydata title={account?.shareableId} />}
+      
     </div>
   );
 };
