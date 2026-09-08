@@ -9,14 +9,14 @@ declare interface HeaderBoxProps{
 
 const HeaderBox = ({type ="title", title,subtext,user}:HeaderBoxProps) => {
   return (
-    <div className='header-box'>
-        <h1 className="header-box-title">
+    <div className='flex flex-col gap-1'>
+        <h1 className="text-indigo-600 font-permanentMarker text-5xl font-bold">
             {title}
             {type === 'greeting' && (
-                <span className='text-blue-600'>&nbsp;{user}</span>
+                <span className='text-sky-400 font-blackOpsOne text-5xl font-bold'>&nbsp;&nbsp;{user}</span>
             )}
         </h1>
-        <p className='header-box-subtext'>{subtext}</p>
+        <p className=' text-16 lg:text-20 font-normal text-gray-600 underline-offset-4'>{subtext}</p>
     </div>
   )
 }

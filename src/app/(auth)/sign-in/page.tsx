@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Auth from '@/components/AuthForm';
 
-const pagesign = () => {
+const pagesignin = () => {
   return (
-    <div>pagesign</div>
+    <div className='flex-center size-full max-sm:px-6'>
+      <Auth type="sign-in"/>
+    </div>
   )
 }
 
-export default pagesign
+export default pagesignin;
